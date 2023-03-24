@@ -1,6 +1,23 @@
 import Head from 'next/head';
 import Navbar2 from '../../components/navbar2';
 
+const Capsule = (
+  <div className='grid justify-items-center pt-10 text-white'>
+    <div className='dark:bg-gray-500 border-2 p-5 text-2xl w-2/3 flex justify-center'>
+      <div className=' border-2 px-10 p-4'>
+        <h1>Name of Capsule</h1>
+      </div>
+      <div className='ml-2 border-2 px-10 flex items-center py-2 bg-red-900'>
+        <h1>Timer:</h1>
+        <h2 className='ml-2'>Timer Number</h2>
+      </div>
+      <div className='ml-2 border-2 px-10 p-2 flex items-center'>
+        <h1>Number Of Files</h1>
+      </div>
+    </div>
+  </div>
+);
+
 export default function Home() {
   return (
     <>
@@ -11,16 +28,9 @@ export default function Home() {
       </Head>
       <Navbar2 />
       <div className='h-screen dark:bg-gray-900'>
-        <div className='grid justify-items-center'>
-          <div className='dark:bg-gray-500 border-2 p-5 flex text-2xl w-2/3'>
-            <div>
-              <h1>Time capsule</h1>
-            </div>
-            <div className='ml-2'>
-              <h1>Time capsule</h1>
-            </div>
-          </div>
-        </div>
+        {Capsule}
+        {Capsule}
+        {Capsule}
       </div>
     </>
   );

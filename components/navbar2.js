@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -14,15 +15,14 @@ export default function Navbar() {
         </Link>
       </div>
       <div className='w-9/12 flex justify-end items-center'></div>
-      {/* <Link> */}
-      <div className='px-5 py-3 border-2 mr-10 hover:bg-slate-500'>
-        {' '}
-        <FontAwesomeIcon
-          icon={faPlus}
-          style={{ fontSize: 30, color: 'white' }}
-        />
-      </div>
-      {/* </Link> */}
+      <Link href='../addCap'>
+        <div className='px-5 py-3 border-2 mr-10 hover:bg-slate-500'>
+          <FontAwesomeIcon
+            icon={faPlus}
+            style={{ fontSize: 30, color: 'white' }}
+          />
+        </div>
+      </Link>
       <div className='px-5 py-3 border-2 mr-10 hover:bg-slate-500'>
         <FontAwesomeIcon
           icon={faClock}
